@@ -11,6 +11,7 @@
             <app-custom-input autocomplete="email" icon="mail-outline" [control]="form.controls.email" type="email"
                 label="Correo"></app-custom-input>
 
+            <!--div para mostrar errores -->
 
             <div class="validators" *ngIf="form.controls.email.errors && form.controls.email.touched">
 
@@ -39,7 +40,7 @@
             <!--==============Boton Registrate =======-->
 
             <ion-button class="ion-margin-top" routerLink="sign-up" expand="block" mode="ios" fill="outline">
-                regístrate
+                Regístrate
                 <ion-icon slot="end" name="person-add-outline"></ion-icon>
             </ion-button>
 

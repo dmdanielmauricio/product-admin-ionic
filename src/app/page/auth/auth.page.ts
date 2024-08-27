@@ -12,8 +12,8 @@ import { UtilsService } from 'src/app/services/utils.service';
 export class AuthPage implements OnInit {
 
   form = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', [Validators.required])
+    email: new FormControl('', [Validators.required, Validators.email]), // trabajan en conjunto con con los div de los inputs
+    password: new FormControl('', [Validators.required]) //trabaja en conjunto con el div del input en auth.page.html
   })
 
   firebaseSvc = inject(FirebaseService);
