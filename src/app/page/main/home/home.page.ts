@@ -50,7 +50,8 @@ export class HomePage implements OnInit {
 
   //=======obtener productos======
   getProducts() {
-    let path = `users/${this.user().uid}/products`;
+    //let path = `users/${this.user().uid}/products`;
+    let path = `products`;
 
     this.loading = true;
 
@@ -107,7 +108,8 @@ export class HomePage implements OnInit {
   //===============Eliminar producto=======================
   async deleteProduct(product: Product) {
 
-    let path = `users/${this.user().uid}/products/${product.id}`
+    let path = `products/${product.id}`;
+    // let path = `users/${this.user().uid}/products/${product.id}`
 
     const loading = await this.utilsSvc.loading();
     await loading.present();
